@@ -1,5 +1,19 @@
 .App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
+  background-color: var(--background-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, transform 0.2s;
+  color: var(--text-color);
+}
+
+.App:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-2px);
 }
 
 .App-logo {
@@ -14,7 +28,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1e3a8a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +36,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  border-radius: 12px 12px 0 0;
 }
 
 .App-link {
@@ -35,4 +50,88 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+form {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #1e3a8a;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+h3 {
+  color: #374151;
+}
+
+p {
+  color: #4b5563;
+}
+
+.task {
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.task:hover {
+  transform: translateY(-2px);
+}
+
+.task button {
+  margin-right: 5px;
+}
+
+.task h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.task p {
+  margin: 5px 0;
+}
+
+select {
+  margin-bottom: 20px;
 }
